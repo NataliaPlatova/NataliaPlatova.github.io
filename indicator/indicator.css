@@ -1,0 +1,152 @@
+body {
+    color: darkolivegreen;
+}
+
+div.indicator {
+    background-color: #f2f2f2;
+    height: 150px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px #666666 solid;
+}
+
+div.lable {
+
+    height: 30px;
+    background-color: #4a4949;
+    border-radius: 9px 9px 0 0;
+    place-content: center;
+}
+
+h4 {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    margin: 0;
+    font-family: Akrobat;
+}
+
+h5 {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: Akrobat;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+    top: 16px;
+    min-height: 88px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px #d5d3d3 solid;
+    align-items: center;
+    justify-content: center;
+}
+
+div.info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.content {
+    margin: 0;
+    margin-left: 8px;
+    text-align: left;
+    position: relative;
+    display: block;
+    font-size: 0.8rem;
+}
+
+ img.icon {
+     display: block;
+     position: relative;
+     height: 20px;
+     width: auto;
+     top: 50%;
+ }
+
+ div.target {
+     height: 42px;
+     width: 56px;
+     background: linear-gradient(to top, #716f74, #a7a09f);
+     border-radius: 4px;
+     position: relative;
+     border: 1px #dcd9d9 solid;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ div.slide-block {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 8px;
+ }
+
+p.slide-block {
+    position: relative;
+    margin: 0;
+}
+
+div.slider {
+    height: 8px;
+    width: 90px;
+    background-color: blue;
+    margin-left: 8px;
+}
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background-color: #d5d3d3;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    height: 16px;
+    width: 16px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+}
+
+.block {
+    background: white;
+    position: relative;
+    width: 30px; height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block::after {
+    content: '';
+    position: absolute;
+    right: -16px; top: 5px;
+    border: 10px solid transparent;
+    border-left: 10px solid gray;
+}
+
+
