@@ -3,6 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/app/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/app/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/filter/filter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/filter/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/list/list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/responseComponent/responseComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancy/121923-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancy/vacancy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancy/vacancy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancyList/vacancyList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancyList/vacancyList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/components/vacancyPage/vacancyPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/jobs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/src/utils/yelp.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,38 +41,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vacancy/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vacancy/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="71" lean-forward="true" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indicator/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indicator/index.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,14 +61,15 @@
         <option value="$PROJECT_DIR$/Новая папка/indicator.html" />
         <option value="$PROJECT_DIR$/indicator/index.html" />
         <option value="$PROJECT_DIR$/vacancy/public/index.html" />
+        <option value="$PROJECT_DIR$/vacancy/package.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-32" />
+    <option name="y" value="68" />
+    <option name="width" value="1364" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -87,17 +84,6 @@
             <path>
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="vacancy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="vacancy" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,16 +120,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570628912917</updated>
-      <workItem from="1570628916930" duration="2985000" />
+      <workItem from="1570628916930" duration="4821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2985000" />
+    <option name="totallyTimeSpent" value="4821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -213,7 +198,55 @@
     <entry file="file://$PROJECT_DIR$/vacancy/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="30" column="71" lean-forward="true" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/partials/index/introduction.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo2/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/single.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/summary.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/taxonomy.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/baseof.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/_default/terms.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/about/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/partials/single/title.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/partials/header.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/themes/tale-hugo/layouts/partials/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vacancy/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
         </state>
       </provider>
     </entry>
