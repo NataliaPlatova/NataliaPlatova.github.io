@@ -1,0 +1,23 @@
+div.vacancyListHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.date {
+    margin-bottom: 0;
+    right: 0;
+    text-align: right;
+    float: right;
+    color: gray;
+}
+
+h5 {
+    color: gray;
+    font-weight: normal;
+}
+
+div.location {
+    display: flex;
+    align-items: baseline;
+}

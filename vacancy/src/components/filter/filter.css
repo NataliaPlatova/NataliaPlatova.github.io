@@ -1,0 +1,19 @@
+div.filter {
+    display: inline-flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+div.form-group {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+label {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
