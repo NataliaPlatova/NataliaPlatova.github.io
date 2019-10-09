@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target indicator</title>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="foo" type="text/x-handlebars-template">{{bar}}</script>
+</head>
+<body>
+    <div class="indicator">
+        <div class="lable">
+            <h4>Target Indicator Demo</h4>
+        </div>
+        <div class="content">
+            <div class="slide-block">
+                <p class="slide-block">Reached</p>
+                <input type="range" min="0" max="15" id="slider" value="0">
+                <div class="target">
+                    <h5>Target</h5>
+                    <h5>$15</h5>
+                </div>
+            </div>
+            <div class="info">
+                <img src="./w256h2561348757719Info.png" class="icon">
+                <p class="content">You need <span id="youNeed"></span>$ more to reach your target</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
