@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/conf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/conf/themes/tale-hugo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gitter_mann_test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/radar_online" vcs="Git" />
   </component>
 </project>
