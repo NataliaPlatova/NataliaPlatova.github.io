@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Docops/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gitter_mann_test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="274" column="26" selection-start-line="274" selection-start-column="26" selection-end-line="274" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -45,6 +52,7 @@
         <option value="$PROJECT_DIR$/indicator/index.html" />
         <option value="$PROJECT_DIR$/vacancy/public/index.html" />
         <option value="$PROJECT_DIR$/vacancy/package.json" />
+        <option value="$PROJECT_DIR$/gitter_mann_test/index.html" />
       </list>
     </option>
   </component>
@@ -67,6 +75,11 @@
             <path>
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="gitter_mann_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,11 +127,12 @@
       <workItem from="1571563753061" duration="129000" />
       <workItem from="1573380224914" duration="3445000" />
       <workItem from="1573442888874" duration="456000" />
+      <workItem from="1575983282894" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9062000" />
+    <option name="totallyTimeSpent" value="9368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -197,6 +211,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitter_mann_test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="274" column="26" selection-start-line="274" selection-start-column="26" selection-end-line="274" selection-end-column="26" />
         </state>
       </provider>
     </entry>
