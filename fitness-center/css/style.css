@@ -1,0 +1,1600 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('../fonts/Bebas Neue Regular'), local('BebasNeueRegular'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+    url('../fonts/BebasNeueBold.woff2') format('woff2'),
+    url('../fonts/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+    url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+    url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed-Light'), local('RobotoCondensed-Light'),
+    url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    min-width: 1366px;
+    height: 100%;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.top-bar {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    min-width: 1366px;
+}
+
+.top-bar .container {
+    width: 1160px;
+    box-sizing: content-box;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar .logo {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.top-bar .phone {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-screen {
+    background: url('../images/main-background.png') no-repeat;
+    background-size: cover;
+    padding: 51px 0;
+    position: relative;
+}
+
+.main-screen .container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-screen .title {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0 64px 0 98px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.main-screen h1 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    color: white;
+    margin: 8px 0;
+    font-size: 109px;
+    font-weight: bold;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+}
+
+.main-screen h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;;
+    color: white;
+    font-size: 49px;
+    letter-spacing: 0.03em;
+    text-align: right;
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-screen .description {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    color: #FFFFFF;
+    width: 113px;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 194px;
+    left: 20px;
+
+}
+
+.main-screen .title>a {
+    display: block;
+    box-sizing: border-box;
+    width: 230px;
+    padding: 20px 0;
+    margin: 45px 0;
+    border: 4px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.main-screen .img {
+    width: 500px;
+    align-self: center
+}
+
+.main-screen aside{
+    width: 200px;
+}
+
+.main-screen .social {
+    list-style: none;
+    padding-bottom: 40px;
+    margin: 0;
+    text-align: right;
+}
+
+.main-screen .social li {
+    margin-top: 16px;
+}
+
+.main-screen .social a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.gym-class {
+    padding: 120px 0 232px 0;
+    margin: 0;
+    position: relative;
+}
+
+.gym-class .container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gym-class .gym-description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-end;
+    padding-left: 60px;
+    padding-top: 48px;
+}
+
+.gym-class h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #102654;
+    margin: 0;
+}
+
+.gym-class span {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #102654;
+    margin: 8px 0 30px 0;
+}
+
+.gym-class p {
+    margin: 8px 0 0 0;
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #102654;
+    width: 360px;
+    letter-spacing: 0px;
+
+}
+
+.gym-class .gym-images {
+    position: relative;
+}
+
+.gym-class .gym-video-container {
+    position: absolute;
+    width: 364px;
+    height: 228px;
+    bottom: -112px;
+    left: -63px;
+}
+
+.gym-class .gym-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #102654;
+}
+
+.gym-class .video-button {
+    border: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../images/video-button.png") no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.gym-class .video-button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.season-tickets {
+    padding: 116px 0 112px 0;
+    background-color: #F8F9FC;
+    position: relative;
+}
+
+.season-tickets .kettlebells-image {
+    width: 242px;
+    height: 330px;
+    background-image: url("../images/kettlebells.png");
+    background-position: top 0 left 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+}
+
+.season-tickets .container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-tickets h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;;
+    color: #102654;
+    margin: 0;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #102654;
+    margin-bottom: 2px;
+}
+
+.season-tickets .tabs {
+    display: table;
+    margin: 22px 0 28px 0;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+.season-tickets ul {
+    display: table-row;
+    list-style: none;
+    padding-bottom: 0;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+    box-sizing: border-box;
+}
+
+.season-tickets li {
+    display: table-cell;
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(16, 38, 84, 0.5);
+    box-sizing: border-box;
+    padding: 0 46px 0 0;
+ }
+
+.season-tickets li:last-child {
+    padding-right: 0;
+}
+
+.season-tickets ul>li>span {
+    display: block;
+    padding: 12px 0;
+    box-sizing: border-box;
+    margin-bottom: -2px;
+}
+
+.season-tickets ul>li>span:hover {
+    cursor: pointer;
+    color: #102654;
+}
+
+.season-tickets .active>span {
+    color: #102654;
+    border-bottom: 2px solid #D10A42;
+}
+
+.season-tickets .ticket-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.season-tickets .card-container {
+    height: 448px;
+    width: 360px;
+    box-sizing: border-box;
+    display: flex;
+    align-content: stretch;
+    padding: 7px;
+    background: #FFFFFF;
+    z-index: 1;
+    margin: 8px 40px 8px 0;
+}
+
+.season-tickets .card-container:nth-child(3n) {
+    margin-right: 0;
+}
+
+.season-tickets .ticket-card {
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 60px 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.season-tickets .ticket-card:last-child {
+    margin-right: 0;
+}
+
+.season-tickets .card-container:hover a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%) no-repeat;
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.season-tickets .card-container:hover {
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+}
+
+.season-tickets h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 18px;
+    color: #102654;
+    margin: 0;
+}
+
+.season-tickets .subtitle {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 11px;
+    color: #495A7D;
+    margin-top: 22px;
+}
+
+.season-tickets .price {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 42px;
+    color: #103AAE;
+    margin-top: auto;
+    z-index: 2;
+}
+
+.season-tickets a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 59px;
+    border: 2px solid #102654;
+    padding: 24px 44px;
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #102654;
+}
+
+.season-tickets .bg-price {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 69px;
+    color: #E8E8E8;
+    opacity: 0.48;
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.season-tickets .bg-image {
+    position: absolute;
+    left: 79%;
+    bottom: -149px;
+}
+
+.promo {
+    margin: 121px 0 118px 0;
+    padding: 0;
+}
+
+.promo .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo .banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.promo .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 84px 78px;
+    width: 500px;
+    min-height: 500px;
+    background: #ED0233;
+    box-sizing: border-box;
+}
+
+.promo .banner-header {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    display: block;
+    width: 201px;
+    color: #FFFFFF;
+}
+
+.promo .subtitle {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 8px 0;
+}
+
+.promo a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: 0;
+    border: 4px solid #FFFFFF;
+    padding: 24px 44px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo .banner-image {
+    background: url("../images/super-games-image.png") no-repeat;
+    background-size: cover;
+    flex-basis: 660px;
+}
+
+.promo section {
+    display: flex;
+    flex-direction: row;
+}
+
+.promo .when {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo .date-time-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.promo .date-time-block>.header {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.promo .date-time {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 3px;
+    width: fit-content;
+}
+
+.promo .date-time-number {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.promo .month-year {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+
+.trainers {
+    margin: 110px 0;
+    padding: 0;
+}
+
+.trainers .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.trainers .header-container {
+    width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.trainers h2 {
+    align-self: flex-start;
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #102654;
+    margin: 0;
+}
+
+.trainers .carousel {
+    width: 1160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.trainers .arrows {
+    position: absolute;
+    height: 32px;
+    min-width: 1272px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    left: 14px;
+}
+
+.arrow-back {
+    height: 32px;
+    width: 16px;
+    border: none;
+    background: url("../images/arrow-back.png") no-repeat;
+    background-size: cover;
+}
+
+.arrow-back:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.arrow-forward {
+    height: 32px;
+    width: 16px;
+    border: none;
+    background: url("../images/arrow-forward.png") no-repeat;
+    background-size: cover;
+}
+
+.arrow-forward:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.trainers .carousel-inner {
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trainers .active {
+    display: flex;
+}
+
+.trainers .card {
+    width: 260px;
+    height: 294px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #495A7D;
+    position: relative;
+    margin: 8px 40px 8px 0;
+}
+
+.trainers .card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.trainers .card>img {
+    width: 100%;
+    height: 100%;
+}
+
+.trainers .card>h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 23px;
+    margin: 0;
+    display: block;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    text-align: center;
+}
+
+.trainers .info {
+    display: none;
+    flex-direction: column;
+    padding: 50px 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 260px;
+    height: 294px;
+    background: rgba(16, 38, 84, 0.89);
+}
+
+.trainers .info>.name>h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.trainers .info>.name>span {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #B6BDCC;
+}
+
+.trainers ul {
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 32px;
+    text-align: left;
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    list-style: none;
+    display: block;
+    width: 100%;
+}
+
+.trainers li {
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.trainers li:before {
+    content: url("../images/Ellipse.png");
+    text-indent: -17px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.trainers li:last-child {
+    margin-bottom: 0;
+}
+
+.trainers .card:hover .info {
+    display: flex;
+}
+
+.trainers .card:hover .hidden {
+    visibility: hidden;
+}
+
+.trainers .card:hover {
+    cursor: pointer;
+}
+
+.benefits {
+    background-color: #F8F9FC;
+    padding: 120px 0;
+    min-width: 1366px;
+    position: relative;
+}
+
+.benefits .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #102654;
+    margin: 0;
+}
+
+.benefits .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: stretch;
+    align-items: center;
+    height: 307px;
+    margin-top: 70px;
+}
+
+.benefits .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 344px;
+}
+
+.benefits .item {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.benefits .item:first-child {
+    padding-bottom: 72px;
+    border-bottom: 1px solid rgba(209, 10, 66, 0.2);
+}
+
+.benefits .item:last-child {
+    padding-top: 72px;
+    border-top: 1px solid rgba(209, 10, 66, 0.2);
+}
+
+.benefits .column:first-child .item:first-child {
+    margin-left: 8px;
+}
+
+.benefits .numbers {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.benefits .numbers>.number {
+    margin: 6px 0;
+}
+
+.benefits .numbers>.subtitle {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2E35AC;
+    margin-top: 0;
+}
+
+.benefits .description {
+    margin-left: 34px;
+}
+
+.benefits h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    color: #102654;
+    margin: 0;
+}
+
+.benefits p {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #102654;
+    margin: 6px 0;
+    max-width: 232px;
+}
+
+.benefits .column:last-child>.item>.numbers {
+    padding-left: 6px;
+}
+
+.benefits .center-column {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 54px 34px;
+    align-items: center;
+    background-color: #1C3374;
+    flex-basis: 240px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.benefits .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefits .center-column>.header>.number {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 74px;
+    color: #FFFFFF;
+}
+
+.benefits .subtitle {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.benefits .center-column>span {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 4px;
+    display: block;
+    max-width: 100%;
+}
+
+.stocks {
+    margin: 118px 0;
+    padding: 0;
+    position: relative;
+}
+
+.stocks .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stocks h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-align: center;
+    margin: 0;
+}
+
+.stocks .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    align-content: flex-start;
+}
+
+.stocks .big-banner {
+    width: 560px;
+    height: 100%;
+    background-color: #ED0233;
+    display: flex;
+    flex-direction: row;
+}
+
+.stocks .banner-content {
+    width: 50%;
+    max-width: 50%;
+    min-height: 462px;
+    padding: 34px 45px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.stocks .header {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 156%;
+    color: #FFFFFF;
+}
+
+.stocks .header-number {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.stocks .description {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 24px 0;
+    display: block;
+    max-width: 100%;
+}
+
+.stocks .big-banner>.banner-content>a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    padding: 2px 0;
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.stocks .banner-image {
+    background-image: url("../images/stocks-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100%;
+}
+
+.stocks .small-banners {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stocks .small-banner-container {
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    padding: 7px;
+    margin-bottom: 40px;
+}
+
+.stocks .small-banner-container:last-child {
+    margin-bottom: 0;
+}
+
+.stocks .small-banner {
+    background-color: white;
+    min-height: 197px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    padding-top: 18px;
+}
+
+.stocks h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 150%;
+    color: #1C3374;
+    margin: 0;
+}
+
+.stocks .small-banner>.description {
+    margin: 2.5px 0;
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1C3374;
+    display: block;
+    max-width: 100%;
+}
+
+.stocks .small-banner>a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1C3374;
+    display: block;
+    padding: 2px 0;
+    border-bottom: 1px solid #1C3374;
+    text-decoration: none;
+    margin-top: 66px;
+}
+
+.reviews {
+    margin: 120px 0;
+    padding: 0;
+    position: relative;
+}
+
+.reviews .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-align: center;
+    margin: 0;
+}
+
+.reviews .carousel {
+    width: 672px;
+    margin: auto;
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.reviews .arrows {
+    position: absolute;
+    height: 32px;
+    width: 672px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.reviews .arrows {
+    position: absolute;
+    height: 32px;
+    width: 672px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.reviews .review {
+    background-color: #1C3374;
+    box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+    width: 560px;
+    min-height: 242px;
+    box-sizing: border-box;
+    padding: 54px 62px;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reviews .active {
+    display: flex;
+}
+
+.reviews img {
+    margin-top: 8px;
+}
+
+.reviews .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    width: 328px;
+    max-height: 100%;
+    justify-content: space-between;
+}
+
+.reviews span {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.reviews p {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    display: block;
+    width: 329px;
+}
+
+.contacts {
+    padding: 60px 0;
+    border-top: 1px solid #74819C;
+    position: relative;
+    box-sizing: border-box;
+    height: 337px;
+}
+
+.contacts .form-background {
+    background-color: #102654;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contacts .container {
+    margin: 0 auto;
+    width: 1160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    padding: 0 15px;
+}
+
+.contacts .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 170px;
+    align-items: flex-start;
+    background-color: #102654;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 50%;
+    height: 210px;
+}
+
+.contacts .form>h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.contacts form {
+    width: 100%;
+}
+
+.contacts .fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts input {
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 6px 0;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.contacts input::placeholder {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.contacts input:hover {
+     border: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+ }
+
+.contacts input:focus {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contacts button {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding: 18px 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    border: 3px solid #FFFFFF;
+    letter-spacing: 0.05em;
+}
+
+.contacts button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.contacts .requisites {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.contacts .requisites>h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #102654;
+    margin: 0;
+}
+
+.contacts .requisites-columns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+    margin-left: 4px;
+}
+
+.contacts .column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.contacts .column:first-child {
+    padding-left: 0;
+    border-right: 0.5px solid #74819C;
+}
+
+.contacts .column:last-child {
+    padding-right: 0;
+    border-left: 0.5px solid #74819C;
+}
+
+.contacts .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .item:last-child {
+    margin-top: 20px;
+}
+
+.contacts h3 {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #102654;
+    margin: 0;
+}
+
+.contacts span {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #102654;
+}
+
+.contacts a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #102654;
+    text-decoration: none;
+}
+
+.page-footer {
+    background-color: #030A1A;
+    padding: 43px 0;
+}
+
+.page-footer .container {
+    width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-footer .logo {
+font-family: 'Bebas Neue', 'Arial', sans-serif;
+font-size: 26px;
+line-height: 20px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.page-footer nav {
+    max-width: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: -8px;
+}
+
+.page-footer a {
+    font-family: 'Roboto Condensed', 'Consolas', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    margin-left: 36px;
+}
+
+.page-footer .social {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    margin-top: -2px;
+}
+
+.page-footer .vk {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    background-color: #B6BDCC;
+    background: url("../images/social-icons.png") no-repeat;
+}
+
+.page-footer .fb {
+    display: block;
+    width: 12px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    background-color: #B6BDCC;
+    background: url("../images/social-icons.png") no-repeat;
+    background-position: right 0;
+}
+
+.page-footer .inst {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    background-color: #B6BDCC;
+    background: url("../images/social-icons.png") no-repeat;
+    background-position: top 0 right -37px;
+}
+
+
