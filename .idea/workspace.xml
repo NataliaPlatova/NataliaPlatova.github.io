@@ -12,7 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fitness-center/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +45,7 @@
         <option value="$PROJECT_DIR$/vacancy/package.json" />
         <option value="$PROJECT_DIR$/gitter_mann_test/index.html" />
         <option value="$PROJECT_DIR$/gitter_mann_test/index.css" />
+        <option value="$PROJECT_DIR$/fitness-center/index.html" />
       </list>
     </option>
   </component>
@@ -56,6 +67,11 @@
             <path>
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="fitness-center" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -108,12 +124,12 @@
       <workItem from="1576042396207" duration="267000" />
       <workItem from="1576408406519" duration="1745000" />
       <workItem from="1576477172729" duration="765000" />
-      <workItem from="1576740386715" duration="245000" />
+      <workItem from="1576740386715" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13391000" />
+    <option name="totallyTimeSpent" value="13640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -206,6 +222,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fitness-center/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
