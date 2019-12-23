@@ -64,12 +64,12 @@
                 <h2>Абонементы</h2>
                 <div class="tabs">
                     <ul>
-                        <li class="active"><span>1 месяц</span></li>
-                        <li><span>6 месяцев</span></li>
-                        <li><span>12 месяцев</span></li>
+                        <li class="tab active"><span>1 месяц</span></li>
+                        <li class="tab"><span>6 месяцев</span></li>
+                        <li class="tab"><span>12 месяцев</span></li>
                     </ul>
                 </div>
-                <div class="ticket-cards 1-month">
+                <div class="ticket-cards">
                     <div class="card-container">
                         <div class="ticket-card">
                             <span class="bg-price">5000</span>
@@ -94,6 +94,64 @@
                             <h3>Полный день</h3>
                             <span class="subtitle">С 8:00 до 22:00</span>
                             <span class="price">2700 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-cards hidden">
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">25000</span>
+                            <h3>С тренером</h3>
+                            <span class="subtitle">12 занятий</span>
+                            <span class="price">25000 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">12000</span>
+                            <h3>Дневной</h3>
+                            <span class="subtitle">С 8:00 до 17:00</span>
+                            <span class="price">12000 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">15000</span>
+                            <h3>Полный день</h3>
+                            <span class="subtitle">С 8:00 до 22:00</span>
+                            <span class="price">15000 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-cards hidden">
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">40000</span>
+                            <h3>С тренером</h3>
+                            <span class="subtitle">12 занятий</span>
+                            <span class="price">40000 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">22000</span>
+                            <h3>Дневной</h3>
+                            <span class="subtitle">С 8:00 до 17:00</span>
+                            <span class="price">22000 <img src="images/ruble.png" alt="ruble" /></span>
+                            <a href="#">Купить абонемент</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="ticket-card">
+                            <span class="bg-price">28000</span>
+                            <h3>Полный день</h3>
+                            <span class="subtitle">С 8:00 до 22:00</span>
+                            <span class="price">28000<img src="images/ruble.png" alt="ruble" /></span>
                             <a href="#">Купить абонемент</a>
                         </div>
                     </div>
@@ -130,16 +188,17 @@
             </div>
         </div>
         <div class="trainers" id="trainers">
-            <div class="container">
-                <div class="header-container">
-                    <h2>Тренеры</h2>
+        <div class="container">
+            <div class="header-container">
+                <h2>Тренеры</h2>
+            </div>
+            <div class="carousel swiper-container">
+                <div class="arrows">
+                    <button type="button" class="arrow-back swiper-button-prev" aria-label="previous-slide"></button>
+                    <button type="button" class="arrow-forward swiper-button-next" aria-label="next-slide"></button>
                 </div>
-                <div class="carousel">
-                    <div class="arrows">
-                        <button type="button" class="arrow-back" aria-label="previous-slide"></button>
-                        <button type="button" class="arrow-forward" aria-label="next-slide"></button>
-                    </div>
-                    <div class="carousel-inner active">
+                <div class="gallery swiper-wrapper">
+                    <div class="carousel-inner swiper-slide">
                         <div class="card">
                             <img src="images/trainers/trainer-1.png" alt="trainer-1" />
                             <h3 class="hidden">Анна Павлова</h3>
@@ -201,7 +260,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner swiper-slide">
                         <div class="card">
                             <img src="images/trainers/trainer-1.png" alt="trainer-1" />
                             <h3 class="hidden">Анна Павлова</h3>
@@ -266,6 +325,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="benefits">
             <div class="container">
                 <h2>Наши преимущества</h2>
@@ -358,31 +418,28 @@
         </div>
         <div class="reviews">
             <div class="container">
-                <h2>Отзывы</h2>
-                <div class="carousel">
+                <div class="header-container">
+                    <h2>Отзывы</h2>
+                </div>
+                <div class="carousel swiper-container">
                     <div class="arrows">
-                        <button type="button" class="arrow-back" aria-label="previous-slide"></button>
-                        <button type="button" class="arrow-forward" aria-label="next-slide"></button>
+                        <button type="button" class="arrow-back swiper-button-prev" aria-label="previous-slide"></button>
+                        <button type="button" class="arrow-forward swiper-button-next" aria-label="next-slide"></button>
                     </div>
-                    <div class="review active">
-                        <img src="images/reviews/review-1.png" alt="review-1" width="80" height="80" />
-                        <div class="text">
-                            <span>Анна Орлова</span>
-                            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                    <div class="gallery swiper-wrapper">
+                        <div class="review swiper-slide">
+                            <img src="images/reviews/review-1.png" alt="review-1" width="80" height="80" />
+                            <div class="text">
+                                <span>Анна Орлова</span>
+                                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review">
-                        <img src="images/reviews/review-1.png" alt="review-1" width="80" height="80" />
-                        <div class="text">
-                            <span>Анна Орлова</span>
-                            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <img src="images/reviews/review-1.png" alt="review-1" width="80" height="80" />
-                        <div class="text">
-                            <span>Анна Орлова</span>
-                            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                        <div class="review swiper-slide">
+                            <img src="images/reviews/review-1.png" alt="review-1" width="80" height="80" />
+                            <div class="text">
+                                <span>Анна Орлова</span>
+                                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -447,4 +504,6 @@
         </div>
     </footer>
 </body>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </html>

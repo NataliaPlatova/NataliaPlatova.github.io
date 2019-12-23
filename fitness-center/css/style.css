@@ -390,7 +390,7 @@ a:hover {
     color: #102654;
 }
 
-.season-tickets .active>span {
+.season-tickets ul>.active>span {
     color: #102654;
     border-bottom: 2px solid #D10A42;
 }
@@ -401,6 +401,10 @@ a:hover {
     width: 100%;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.season-tickets .hidden {
+    display: none;
 }
 
 .season-tickets .card-container {
@@ -699,9 +703,10 @@ a:hover {
     width: 1160px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 44px;
+    overflow: hidden;
 }
 
 .trainers .arrows {
@@ -741,16 +746,21 @@ a:hover {
     opacity: 50%;
 }
 
-.trainers .carousel-inner {
-    width: 100%;
-    display: none;
-    justify-content: flex-start;
+.trainers .gallery {
+    min-width: 2360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    transition-duration: 1s;
 }
 
-.trainers .active {
+.trainers .carousel-inner {
+    width: 1160px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .trainers .card {
@@ -1222,47 +1232,54 @@ a:hover {
     align-items: center;
 }
 
+.reviews .header-container {
+    width: 1160px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 .reviews h2 {
+    align-self: flex-start;
     font-family: 'Bebas Neue', 'Arial', sans-serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #102654;
-    text-align: center;
     margin: 0;
 }
 
 .reviews .carousel {
-    width: 672px;
-    margin: auto;
-    margin-top: 52px;
+    width: 560px;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 .reviews .arrows {
     position: absolute;
     height: 32px;
-    width: 672px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    min-width: 672px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    box-sizing: border-box;;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.reviews .arrows {
-    position: absolute;
-    height: 32px;
-    width: 672px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.reviews .gallery {
+    min-width: 2360px;
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition-duration: 1s;
 }
 
 .reviews .review {
@@ -1272,13 +1289,9 @@ a:hover {
     min-height: 242px;
     box-sizing: border-box;
     padding: 54px 62px;
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.reviews .active {
-    display: flex;
 }
 
 .reviews img {
@@ -1312,7 +1325,7 @@ a:hover {
     color: #FFFFFF;
     margin: 0;
     padding-bottom: 2px;
-    margin-top: 10px;
+    margin-top: 14px;
     display: block;
     width: 329px;
 }
