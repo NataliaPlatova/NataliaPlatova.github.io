@@ -1,7 +1,7 @@
 window.onload = function () {
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
-        loop: true,
+        loop: false,
 
         navigation: {
             nextEl: '.swiper-button-next',

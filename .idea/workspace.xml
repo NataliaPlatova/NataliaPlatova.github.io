@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="" />
+    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,8 +43,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="29" />
+    <option name="y" value="2" />
     <option name="width" value="1364" />
     <option name="height" value="726" />
   </component>
@@ -52,6 +53,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -59,16 +61,10 @@
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="fitness-center" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,11 +112,12 @@
       <workItem from="1576408406519" duration="1745000" />
       <workItem from="1576477172729" duration="765000" />
       <workItem from="1576740386715" duration="3879000" />
+      <workItem from="1577095846437" duration="683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17025000" />
+    <option name="totallyTimeSpent" value="17708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
