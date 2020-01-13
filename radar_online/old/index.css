@@ -1,3 +1,12 @@
+html {
+    font-family: Mediator;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f2eded;
+}
+
 #building-image {
     position: absolute;
     top:-110px
@@ -20,7 +29,7 @@
     background-color: #0231ff;
 }
 
-.n-h1 {
+h1 {
     font-family: Mediator;
     font-size: 7rem;
     font-weight: bolder;
@@ -28,7 +37,7 @@
     font-weight: 900
 }
 
-.n-h2 {
+h2 {
     font-family: Mediator;
     font-size: 4rem;
     font-weight: bolder;
@@ -37,13 +46,13 @@
     font-weight: 900
 }
 
-.n-h3 {
+h3 {
     font-family: Mediator;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.n-h4 {
+h4 {
     font-family: Mediator;
     font-size: 14px;
     font-weight: normal;
@@ -52,14 +61,14 @@
     margin: 0;
 }
 
-.n-h5 {
+h5 {
     font-family: Mediator;
     font-size: 22px;
     font-weight: bold;
     padding: 0;
 }
 
-.n-p {
+p {
     font-family: Mediator;
     font-size: 1rem;
     line-height: 1.5rem;
