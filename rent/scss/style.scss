@@ -1,0 +1,678 @@
+$blue: #425eab;
+$black: #525252;
+
+$accent-font: "Akrobat Black", sans-serif;
+$regular-font: "Lato", sans-serif;
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page-header {
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  &__container {
+    @extend .container;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  &__phone {
+    font-family: $regular-font;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  &__burger {
+    display: none;
+  }
+}
+
+.logo {
+  font-size: 22px;
+  font-family: $accent-font;
+  text-decoration: none;
+  color: white;
+  margin-right: 24px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: block;
+  flex-shrink: 2;
+  &__item {
+    display: inline-block;
+    margin: 8px 20px 8px 0px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    text-style: none;
+    font-size: 14px;
+    font-family: $regular-font;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .page-header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    &>span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      background-color: white;
+      transition: all 0.3s ease 0s;
+    }
+    &:before,
+    &:after{
+      content: "";
+      background-color: white;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    &.active:before{
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &.active:after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    &.active>span {
+      transform: scale(0);
+    }
+  }
+  .menu {
+    position: absolute;
+    top: -360px;
+    background-color: $black;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    padding: 16px 32px;
+    transition: all 0.3s ease 0s;
+    &__item {
+      display: block;
+      margin-bottom: 12px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+    &.active {
+      top: 60px
+    }
+  }
+}
+
+.main-screen {
+  background: url("../images/main-screen-image.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  color: white;
+
+  &__container {
+    @extend .container;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+    z-index: 3;
+    font-family: $accent-font;
+  }
+
+  &__subtitle {
+    font-family: $regular-font;
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 440px;
+    display: block;
+    margin: 24px 0 0 0;
+    z-index: 3;
+  }
+
+  &__decorations {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.decorations {
+  width: 100%;
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  &__square {
+    width: 50%;
+    height: 385px;
+    &_blue{
+      background-color: $blue;
+      z-index: 2;
+    }
+    &_black{
+      background-color: black;
+      opacity: 50%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(50%, -40%);
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .decorations {
+    &__square {
+      width: 80%;
+      &_black {
+        transform: translate(10%, -40%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px){
+  .main-screen {
+    &__container {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 100%;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+  .decorations {
+    &__square {
+      height: 300px;
+      &_black {
+        transform: translate(10%, -40%);
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.block-title {
+  font-family: $accent-font;
+  font-size: 36px;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.best-offers {
+  &__container {
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  &__title{
+    @extend .block-title;
+    color: $black;
+    margin-bottom: 48px;
+  }
+  &__offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__cardWrapper {
+    width: 33.333%;
+    padding-right: 20px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+  &__see-all {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: $regular-font;
+    font-size: 14px;
+    width: 30%;
+    padding: 16px;
+    background-color: $blue;
+    box-sizing: border-box;
+    align-self: center;
+  }
+}
+
+.offer-card {
+  width: 100%;
+  min-height: 226px;
+  position: relative;
+  &__photo {
+    width: 100%;
+    height: 100%;
+  }
+  &__more-information {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 16%;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &:hover &__more-information {
+    display: flex;
+    cursor: pointer;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    font-family: $regular-font;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  &__learn-more {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: $regular-font;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px;
+    background-color: $blue;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .best-offers {
+    &__cardWrapper{
+      width: 100%;
+      padding-right: 0;
+    }
+    &__see-all {
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+  .offer-card {
+    &__row {
+      font-size: 20px;
+    }
+    &__learn-more {
+      font-size: 20px;
+    }
+  }
+}
+
+.about {
+  background: url("../images/company_screen_image.png") no-repeat;
+  background-size: cover;
+  color: white;
+  &__container {
+    @extend .container;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    >p{
+      font-family: $regular-font;
+      font-size: 14px;
+    }
+  }
+  &__title {
+    color: white;
+  }
+  &__information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    font-family: $regular-font;
+    font-size: 14px;
+  }
+  &__item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    >.number {
+      font-size: 56px;
+      font-family: $regular-font;
+      margin-right: 8px;
+    }
+    >.measurement {
+      font-family: $accent-font;
+      font-size: 22px;
+    }
+  }
+}
+
+.benefits {
+  &__container {
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  &__title {
+    color: $black;
+    margin-bottom: 20px;
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__column {
+    width: 21%;
+    margin-right: 40px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    &-icon {
+      font-size: 40px;
+      color: $blue;
+    }
+    &-title {
+      font-family: $regular-font;
+      font-size: 22px;
+      font-weight: bold;
+      color: $black;
+      margin: 8px 0;
+    }
+    >span {
+      font-family: $regular-font;
+      font-size: 14px;
+      color: $black;
+    }
+  }
+}
+
+@media screen and (max-width: 809px){
+  .benefits{
+    &__column {
+      width: 45%;
+      margin-right: auto;
+      &:nth-child(4n) {
+        margin-right: auto;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px){
+  .benefits {
+    &__container {
+      flex-direction: column;
+    }
+    &__column {
+      width: 100%;
+      margin-right: 0;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.form {
+  background: url("../images/form-bg-image.png") no-repeat;
+  background-size: cover;
+  &__container {
+    @extend .container;
+    padding-bottom: 112px;
+    padding-top: 112px;
+    >span {
+      font-family: $regular-font;
+      color: white;
+      font-size: 22px;
+    }
+    >form {
+      margin-top: 42px;
+      display: flex;
+      width: 100%;
+    }
+  }
+  &__title {
+    color: white;
+  }
+  &__submit-button {
+    padding: 16px;
+    background-color: $blue;
+    color: white;
+    text-align: center;
+    border: none;
+    min-width: 200px;
+    font-family: $regular-font;
+    font-size: 14px;
+    margin-left: auto;
+  }
+}
+
+.fields {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  >input {
+    padding: 16px;
+    min-width: 200px;
+    border: none;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .form {
+    &__submit-button {
+      margin-left: 0;
+      width: 70%;
+    }
+  }
+  .fields{
+    flex-direction: column;
+    >input {
+      width: 70%;
+      margin-right: 0;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .form {
+    &__submit-button {
+      margin-left: 0;
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  .fields{
+    flex-direction: column;
+    >input {
+      width: 100%;
+      margin-right: 0;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.contacts {
+  &__container {
+    @extend .container
+  }
+}
+
+.page-footer {
+  background-color: $blue;
+  &__container {
+    @extend .container;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $regular-font;
+    font-size: 14px;
+    color: white;
+    margin-right: 24px;
+    margin-top: 4px;
+  }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+  &__link {
+    background-image: url("../images/social_sprite.png");
+    backgronud-repeat: no-repeat;
+    width: 39px;
+    height: 22px;
+  }
+  & .vk {
+    background-position: 0, 0;
+  }
+  & .gplus {
+    background-position: top 0 left -39px;
+  }
+  & .fb {
+    background-position: top 0 left -78px;
+  }
+  & .twitter {
+    background-position: top 0 left -117px;
+  }
+  & .odn {
+    background-position: top 0 left -156px;
+  }
+  & .youtube {
+    background-position: top 0 left -190px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer {
+    &__link {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .page-footer {
+    &__container {
+      flex-direction: column;
+    }
+    &__link {
+      margin-left: 24px;
+      margin: 16px 24px 16px 0;
+    }
+  }
+}
