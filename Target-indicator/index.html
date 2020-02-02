@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target-indicator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="indicator">
+        <div class="indicator__lable">
+            <span>Target Indicator Demo</span>
+        </div>
+        <div class="indicator__content">
+            <div class="slide-block">
+                <span>Reached:</span>
+                <div class="input-wrapper">
+                    <div class="thumb">
+                        <div class="thumb__top"></div>
+                        <span>$<span id="slider-value"></span></span>
+                    </div>
+                    <input type="range" min="0" max="15" id="slider" value="0">
+                </div>
+                <div class="slide-block__target">
+                    <div class="slide-block__target-block"><span class="slide-block__target-label">Target</span></div>
+                    <div class="slide-block__target-block"><span class="slide-block__target-number">$15</span></div>
+                </div>
+            </div>
+            <div class="indicator__info">
+                <img src="images/Information.jpg" class="indicator__info-icon">
+                <p class="indicator__info-content">You need $<span id="youNeed"></span> more to reach your target.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
