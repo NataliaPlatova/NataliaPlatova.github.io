@@ -86,10 +86,10 @@ body {
 .slide-block__target-label {
     color: white;
     font-size: 12px;
-    margin: 0.5px 0;
+    margin: 1px 0;
     text-align: center;
     box-shadow: 0 0.5px 1px #706f73;
-    padding: 0 6px;
+    padding: 0 6px 1px 6px;
 }
 
 .slide-block__target-number {
@@ -97,7 +97,7 @@ body {
     margin: 0;
     color: white;
     text-align: center;
-    padding-bottom: 1px;
+    padding: 1px 0;
 }
 
 .input-wrapper {
@@ -117,19 +117,16 @@ input[type="range"] {
     height: 7px;
     width: 110px;
     cursor: pointer;
-    border-radius: 0; /* iOS */
+    border-radius: 0;
 }
 
 ::-webkit-slider-runnable-track {
     background: #cecece;
 }
 
-/*
- * 1. Set to 0 width and remove border for a slider without a thumb
- */
 ::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 1px; /* 1 */
+    width: 1px;
     height: 7px;
     background: #0489d1;
     box-shadow: -100vw 0 0 100vw #0489d1;
