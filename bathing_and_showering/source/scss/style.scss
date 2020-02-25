@@ -1,0 +1,1037 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+  url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+  url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$breakpoint: 768px;
+
+@mixin mq($width, $type: min) {
+  $width: $width;
+    @if $type == max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+}
+
+@mixin font-montserrat($size: false, $color: false, $weight: false,  $lh: false) {
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+$siteBackground: #F3F3F3;
+$yellow: #FFC501;
+$textColor: #555555;
+$tagsAndHover: #F7F7F7;
+$linesColor: #DDDDDD;
+$lightText: #999999;
+$linksBackground: #FFF3CC;
+$black: #000000;
+$videoHover: rgba(51, 51, 51, 0.6);
+$transparent: rgba(0, 0, 0, 0);
+
+%paragraphText {
+  @include font-montserrat(15px, $textColor, normal, 24px);
+  letter-spacing: 0.25px;
+};
+
+%blockContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+%tableRow {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $linesColor;
+  padding: 24px 16px;
+  box-sizing: border-box;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include mq($breakpoint, max) {
+    padding: 16px 0;
+
+    &:last-child {
+      border-bottom: 1px solid $linesColor;
+    }
+  }
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.site-header {
+  width: 100vw;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 1312px;
+    margin: 0 auto;
+    border-bottom: 1px solid $linesColor;
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include mq($breakpoint, max) {
+      padding: 14px 0;
+      border-bottom: none;
+    }
+  }
+
+  @include mq($breakpoint, max) {
+    border-bottom: 1px solid $linesColor;
+  }
+
+  &__link {
+    @include font-montserrat(16px, $lightText, normal, 24px);
+    letter-spacing: 0.25px;
+    padding-right: 140px;
+
+    &>figure {
+      &>img {
+        margin: 0 4px 0 0;
+        display: inline-block;
+        vertical-align: bottom;
+        max-height: 28px;
+      }
+
+      &>figcaption {
+        display: inline-block;
+        vertical-align: bottom;
+
+        @include mq($breakpoint, max) {
+          display: none;
+        }
+      }
+    }
+
+    @include mq($breakpoint, max) {
+      padding-right: 36px;
+    }
+  }
+
+  &__page-title {
+    @include font-montserrat(24px, $black, 600, 28px);
+    letter-spacing: 0.38px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include mq($breakpoint, max) {
+      @include font-montserrat(18px, $black, 600, 32px);
+      letter-spacing: 0.1px;
+    }
+  }
+
+  &__button {
+    @include font-montserrat(16px, $lightText, normal, 24px);
+    letter-spacing: 0.25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    margin-right: 30px;
+
+    @include mq($breakpoint, max) {
+      margin-right: 0;
+    }
+
+    &>figure {
+      &>img {
+        margin: 0 4px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+        max-height: 28px;
+      }
+
+      &>figcaption {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include mq($breakpoint, max) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__profile-link {
+    &>div {
+      height: 28px;
+      width: 28px;
+      border-radius: 50%;
+      background-color: $linksBackground;
+    }
+  }
+}
+
+.burger-button {
+  border: none;
+  background: $transparent url("../img/top.png") no-repeat top 50% left 50%;
+  width: 28px;
+  height: 28px;
+  display: none;
+
+  @include mq($breakpoint, max) {
+    display: block;
+  }
+}
+
+.burger-menu {
+  display: flex;
+  position: unset;
+
+  @include mq($breakpoint, max) {
+    position: absolute;
+    top: -32px;
+  }
+}
+
+.title {
+  width: 100vw;
+  padding: 86px 20px 20px 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    @extend %blockContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+
+    @include mq($breakpoint, max) {
+      padding: 0;
+    }
+  }
+
+  &__block {
+    max-width: 570px;
+
+    @include mq($breakpoint, max) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__h2 {
+    @include font-montserrat(42px, $black, 600, 120%);
+    margin: 0;
+
+    &_yellow {
+      color: $yellow
+    }
+
+    @include mq($breakpoint, max) {
+      @include font-montserrat(32px, $black, 600, 40px);
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.tags {
+  width: 100vw;
+  padding: 20px 20px 60px 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding: 20px;
+  }
+
+  &__container{
+    @extend %blockContainer;
+    padding-left: 26px;
+
+    @include mq($breakpoint, max) {
+      padding-left: 0;
+    }
+
+    &>span {
+      @extend %paragraphText;
+      margin-bottom: 10px;
+
+      @include mq($breakpoint, max) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.tags-list {
+  margin-bottom: -6px;
+  &__tag {
+    padding: 9px 35px 7px 24px;
+    border-radius: 4px;
+    background-color: $tagsAndHover;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    display: inline-block;
+
+    @include mq($breakpoint, max) {
+      padding: 9px 35px 9px 24px;
+    }
+
+    &>a {
+      @extend %paragraphText;
+      letter-spacing: 0.28px;
+      display: inline-block;
+    }
+
+    &_active {
+      background-color: $yellow;
+
+      &>a {
+        color: $black;
+      }
+    }
+
+    &_favorites {
+      padding: 6px 28px 6px 16px;
+      display: inline-block;
+      vertical-align: bottom;
+
+      &:before {
+        content: url("../img/star-golden.png");
+        max-height: 28px;
+        max-width: 28px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 8px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $yellow;
+
+      &>a {
+        color: $black;
+      }
+    }
+  }
+}
+
+.care-tips {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding: 20px
+  }
+
+  &__container {
+    @extend %blockContainer;
+    padding-left: 8px;
+    box-sizing: border-box;
+
+    @include mq($breakpoint, max) {
+      padding: 0;
+    }
+  }
+
+  &__tips-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__tip {
+    @extend %tableRow;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 16px 40px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include mq($breakpoint, max) {
+      padding: 16px 0;
+
+      &:last-child {
+        border-bottom: 1px solid $linesColor;
+      }
+    }
+  }
+
+  &__tip-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &>p {
+      @extend %paragraphText;
+      margin: 0;
+      width: 80%;
+    }
+
+    @include mq($breakpoint, max) {
+      &>p {
+        margin-bottom: 8px;
+        width: 90%;
+        max-height: 168px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  &__favorite {
+    margin-top: -8px;
+
+    @include mq($breakpoint, max) {
+      margin-top: 0;
+    }
+  }
+
+  &__tip_favorite>&__tip-content>&__favorite {
+    background-image: url("../img/star-golden.png");
+  }
+}
+
+.block-header {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $linesColor;
+
+  &>h2 {
+    @include font-montserrat(24px, $black, 600, 32px);
+    letter-spacing: 0.38px;
+    margin: 0;
+  }
+
+  &>a {
+    @extend %paragraphText;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 8px;
+      background-color: $linksBackground;
+      display: block;
+      position: absolute;
+      bottom: 4px;
+      z-index: -1;
+    }
+  }
+
+  @include mq($breakpoint, max) {
+    padding-bottom: 16px;
+
+    &>h2 {
+      @include font-montserrat(18px, $black, 600, 28px);
+      letter-spacing: 0.38px;
+      margin: 0;
+    }
+
+    &>a {
+      color: $transparent;
+      align-self: flex-start;
+
+      &:before {
+        width: 60.39px;
+        right: 0;
+        top: 12px;
+        bottom: unset;
+      }
+
+      &:after {
+        color: $black;
+        content: "View All";
+        position: absolute;
+        top: 4px;
+        right: 0;
+      }
+    }
+  }
+}
+
+.favorite {
+  border: none;
+  width: 28px;
+  height: 28px;
+  background: $transparent url("../img/star.png") no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-image: url("../img/star-golden.png");
+    cursor: pointer;
+  }
+
+  &_checked {
+    background-image: url("../img/star-golden.png");
+  }
+}
+
+.theme {
+  display: none;
+  @include font-montserrat(13px, $lightText, normal, 20px);
+  letter-spacing: 0.4px;
+
+  @include mq($breakpoint, max) {
+    display: block;
+  }
+}
+
+.videos {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding: 20px;
+  }
+
+  &__container {
+    @extend %blockContainer;
+  }
+
+  &__block-header {
+    padding-left: 10px;
+    padding-bottom: 22px;
+    margin-bottom: 42px;
+    border-bottom: 1px solid $linesColor;
+    box-sizing: border-box;
+
+    @include mq($breakpoint, max) {
+      padding-left: 0;
+      padding-bottom: 16px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__video-group {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 22.9% 22.9% 22.9% 22.9%;
+    gap: 2.08%;
+    margin-bottom: 42px;
+
+    @include  mq($breakpoint, max) {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto 0 0;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__video-card {
+    @include mq($breakpoint, max) {
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.video-card {
+  position: relative;
+
+  @include mq($breakpoint, max) {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $linesColor;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  &__background {
+    padding: 8px;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background-color: $tagsAndHover;
+    border-radius: 6px;
+    z-index: 1;
+    display: none;
+  }
+
+  &:hover &__background {
+    display: block;
+  }
+
+  &__preview {
+    max-height: 140px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @include mq($breakpoint, max) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__interface {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 4px;
+    z-index: 2;
+
+    &>span {
+      @extend %paragraphText;
+      font-weight: 600;
+      color: white;
+    }
+  }
+
+  &__play-button {
+    border: none;
+    background: $yellow url("../img/play@2x.png") no-repeat top 50% left 50%;
+    background-size: 42px 42px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__favorite {
+    background-image: url("../img/star-white.png");
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    &>p {
+      @include font-montserrat(15px, $textColor, normal, 24px);
+      letter-spacing: 0.4px;
+      z-index: 2;
+      margin: 0;
+
+      @include mq($breakpoint, max) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &_favorite>&__preview>&__interface>&__favorite {
+    background-image: url("../img/star-golden.png");
+  }
+
+  &:hover &__interface {
+    background-color: $videoHover;
+  }
+
+  &:hover &__play-button {
+    display: block;
+  }
+}
+
+.podcasts {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include  mq($breakpoint, max) {
+    padding: 20px;
+  }
+
+  &__container {
+    @extend %blockContainer;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    @include mq($breakpoint, max) {
+      padding-left: 0;
+    }
+  }
+
+  &__podcast {
+    @extend %tableRow;
+    align-items: flex-start;
+
+    @include mq($breakpoint, max) {
+      padding: 16px 0 16px 8px;
+    }
+  }
+
+  &__podcast-information {
+    width: 60%;
+    margin-right: 48px;
+
+    &>h3 {
+      @extend %paragraphText;
+      margin: 0;
+    }
+
+    &>p {
+      @extend %paragraphText;
+      margin: 0;
+      display: none;
+    }
+
+    @include mq($breakpoint, max) {
+      width: 60%;
+      margin-right: 12px;
+    }
+  }
+
+  &__button-wrapper {
+    min-width: 28px;
+    text-align: center;
+    margin-right: 16px;
+
+    &>span {
+      @extend %paragraphText;
+    }
+
+    @include mq($breakpoint, max) {
+      margin-right: 8px;
+    }
+  }
+
+  &__play-button {
+    border: none;
+    background: $yellow url("../img/play.png") no-repeat top 50% left 50%;
+    background-size: 28px 28px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    align-self: center;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__time {
+    @extend %paragraphText;
+    margin-right: auto;
+  }
+
+  &__podcast:hover {
+    background-color: $tagsAndHover;
+  }
+
+  &__podcast:hover &__podcast-information{
+    &>h3 {
+      display: none;
+    }
+
+    &>p {
+      display: block;
+    }
+  }
+
+  &__podcast:hover &__button-wrapper {
+    &>span {
+      display: none;
+    }
+  }
+
+  &__podcast:hover &__play-button{
+    display: block;
+  }
+
+  &__favorite {
+    margin-top: -4px;
+  }
+}
+
+.links {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include  mq($breakpoint, max) {
+    padding: 20px;
+  }
+
+  &__container {
+    @extend %blockContainer;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+
+    @include  mq($breakpoint, max) {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link-block {
+    @extend %tableRow;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px 24px 0;
+
+    @include  mq($breakpoint, max) {
+      padding: 16px 0;
+    }
+  }
+
+  &__link-inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__content {
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &>p {
+      @extend %paragraphText;
+      margin: 0 0 8px;
+
+      @include  mq($breakpoint, max) {
+        margin-bottom: 0;
+      }
+    }
+
+    &>a {
+      @include font-montserrat(13px, $lightText, normal, 20px);
+      letter-spacing: 0.35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: $linksBackground;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+
+      @include  mq($breakpoint, max) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.documents {
+  width: 100vw;
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding: 20px 20px 29px 20px;
+  }
+
+  &__container {
+    @extend %blockContainer;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    @include mq($breakpoint, max) {
+      padding-left: 0;
+    }
+  }
+
+  &__document {
+    @extend %tableRow;
+    align-items: flex-start;
+
+    &>img {
+      margin-right: 16px;
+
+      @include mq($breakpoint, max) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__document-information {
+    margin-right: auto;
+    width: 78%;
+
+    @include mq($breakpoint, max) {
+      width: 76%;
+    }
+  }
+
+  &__read-time {
+    @include font-montserrat(13px, $lightText, normal, 20px);
+    letter-spacing: 0.35px;
+
+    @include mq($breakpoint, max) {
+      display: none;
+    }
+  }
+
+  &__document-description {
+    @extend %paragraphText;
+    margin: 0 0 8px;
+  }
+
+  &_favorite>.favorite {
+    background-image: url("../img/star-golden.png");
+  }
+}
+
+.page-footer {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include mq($breakpoint, max) {
+    padding: 20px;
+  }
+
+  &__container {
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include font-montserrat(12px, $lightText, normal, 24px);
+    letter-spacing: 0.32px;
+    box-sizing: border-box;
+
+    &>span {
+      margin-right: auto;
+
+      @include mq($breakpoint, max) {
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  &__nav {
+
+    &-item {
+      display: inline-block;
+
+      &>a {
+        @include font-montserrat(12px, $lightText, normal, 24px);
+        letter-spacing: 0.32px;
+        border-right: 1px solid $lightText;
+        padding: 0 8px;
+      }
+
+      &:last-child {
+        &>a {
+          border-right: none;
+          padding-right: 0;
+        }
+      }
+
+      &:first-child {
+        & > a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+
+}
