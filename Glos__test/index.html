@@ -13,7 +13,8 @@
 <header class="site-header">
     <div class="container site-header__container">
         <div class="page-header__logo">
-            <img src="img/logo.png" alt="logo" width="273" height="100"/>
+            <img class="logo" src="img/logo.png" alt="logo" width="273" height="100"/>
+            <img class="logo_mobile"  src="img/mobile-logo.png" alt="logo" width="144" height="53"/>
         </div>
         <div class="site-header__contacts">
             <a href="#">+7(499) 777-77-77</a>
@@ -21,8 +22,8 @@
             <button type="button" class="feedback-button">Обратная связь</button>
         </div>
         <div class="site-header__buttons">
-            <a href="#">gg</a>
-            <button type="button">hhh</button>
+            <a class="site-header__call-link" href="#"></a>
+            <button class="site-header__burger" type="button"></button>
         </div>
     </div>
 </header>
@@ -68,12 +69,8 @@
     <section class="slider">
         <div class="slider__container">
             <div class="slider__gallery">
-                <div class="slider__slide">
-                    <img src="img/slides/slide-1.png" alt="banner-1" width="1920" height="400"/>
-                </div>
-                <div class="slider__slide">
-                    <img src="img/slides/slide-2.png" alt="banner-2" width="1920" height="400"/>
-                </div>
+                <div class="slider__slide" style="background-image: url('img/slides/slide-1.png')"></div>
+                <div class="slider__slide" style="background-image: url('img/slides/slide-2.png')"></div>
             </div>
             <div class="slider__arrows"></div>
         </div>
@@ -134,56 +131,46 @@
                             </ul>
                         </div>
                         <div class="catalog__products">
-                            <a href="#">
                                 <div class="catalog__product-card product-card">
-                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <a href="#"><img src="img/nophoto.png" alt="product name" width="210" height="209" /></a>
                                     <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
                                     <div class="product-card__bottom">
                                         <span class="product-card__price">1 900 р.</span>
                                         <button type=button class="product-card__add-to-basket add-to-basket"></button>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#">
                                 <div class="catalog__product-card product-card">
-                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <a href="#"><img src="img/nophoto.png" alt="product name" width="210" height="209" /></a>
                                     <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
                                     <div class="product-card__bottom">
                                         <span class="product-card__price">1 900 р.</span>
                                         <button type=button class="product-card__add-to-basket add-to-basket"></button>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#">
                                 <div class="catalog__product-card product-card">
-                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <a href="#"><img src="img/nophoto.png" alt="product name" width="210" height="209" /></a>
                                     <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
                                     <div class="product-card__bottom">
                                         <span class="product-card__price">1 900 р.</span>
                                         <button type=button class="product-card__add-to-basket add-to-basket"></button>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#">
                                 <div class="catalog__product-card product-card">
-                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <a href="#"><img src="img/nophoto.png" alt="product name" width="210" height="209" /></a>
                                     <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
                                     <div class="product-card__bottom">
                                         <span class="product-card__price">1 900 р.</span>
                                         <button type=button class="product-card__add-to-basket add-to-basket"></button>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#">
                                 <div class="catalog__product-card product-card">
-                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <a href="#"><img src="img/nophoto.png" alt="product name" width="210" height="209" /></a>
                                     <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
                                     <div class="product-card__bottom">
                                         <span class="product-card__price">1 900 р.</span>
                                         <button type=button class="product-card__add-to-basket add-to-basket"></button>
                                     </div>
                                 </div>
-                            </a>
                             <div class="catalog__pages-block">
                                 <ul class="catalog__pages">
                                     <li class="catalog__page">
@@ -214,6 +201,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus gravida, fringilla lorem ac, aliquet felis. Aliquam auctor, arcu id consequat accumsan, eros ipsum eleifend orci, nec ultrices nulla dui a lectus. Sed vitae metus in lorem sollicitudin lacinia. Praesent iaculis laoreet turpis, eget pulvinar leo consectetur eget. Morbi blandit tempor tellus ut aliquet. Aliquam pretium ex vel risus aliquet, id mollis velit dignissim. Proin ornare lacus ac ligula sodales dictum nec ac enim. Mauris nisi tellus, finibus id diam nec, feugiat maximus orci. Sed at varius felis. t</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus gravida, fringilla lorem ac, aliquet felis. Aliquam auctor, arcu id consequat accumsan, eros ipsum eleifend orci, nec ultrices nulla dui a lectus. Sed vitae metus in lorem sollicitudin lacinia. Praesent iaculis laoreet turpis, eget pulvinar leo consectetur eget. Morbi blandit tempor tellus ut aliquet. Aliquam pretium ex vel risus aliquet, id mollis velit dignissim. Proin ornare lacus ac ligula sodales dictum nec ac enim. Mauris nisi tellus, finibus id diam nec, feugiat maximus orci. Sed at varius felis. t</p>
                     </div>
+                </div>
             </div>
         </div>
     </section>
@@ -222,6 +210,10 @@
     <div class="site-footer__clear-fix"></div>
     <div class="site-footer__content">
         <div class="container site-footer__container">
+            <div class="site-footer__logo">
+                <img src="img/logo-white.png" width="144" height="53" alt="logo"/>
+            </div>
+            <button type="button" class="feedback-button site-footer__feedback-button">Обратная связь</button>
             <div class="site-footer__info">
                 <span>© 2012–2013 ЗАО «Компания»</span>
                 <span>info@name.ru</span>
