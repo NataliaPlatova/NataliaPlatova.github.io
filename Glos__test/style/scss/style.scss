@@ -443,6 +443,7 @@ a {
       padding-left: 1.7%;
       padding-right: 1.7%;
       box-sizing: border-box;
+      margin-left: auto;
     }
     &__pages-block {
       width: 100%;
@@ -567,6 +568,7 @@ a {
       flex-direction: column;
       padding-left: 15px;
       padding-right: 15px;
+      margin-left: 0;
     }
     &__pages-block {
       width: 100%;

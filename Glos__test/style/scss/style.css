@@ -334,7 +334,8 @@ a {
     justify-content: flex-start;
     padding-left: 1.7%;
     padding-right: 1.7%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-left: auto; }
   .catalog__pages-block {
     width: 100%; }
   .catalog__product-card {
@@ -429,7 +430,8 @@ a {
     display: -ms-flexbox;
     flex-direction: column;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    margin-left: 0; }
   .catalog__pages-block {
     width: 100%; }
   .catalog__product-card {
