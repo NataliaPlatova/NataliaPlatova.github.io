@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glos__test</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="style/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container site-header__container">
+        <div class="page-header__logo">
+            <img src="img/logo.png" alt="logo" width="273" height="100"/>
+        </div>
+        <div class="site-header__contacts">
+            <a href="#">+7(499) 777-77-77</a>
+            <a href="#">+7(499) 777-77-77</a>
+            <button type="button" class="feedback-button">Обратная связь</button>
+        </div>
+        <div class="site-header__buttons">
+            <a href="#">gg</a>
+            <button type="button">hhh</button>
+        </div>
+    </div>
+</header>
+<div class="feedback__overlay">
+    <div class="feedback__form-card">
+        <button type="button" class="feedback__close"></button>
+        <h3 class="feedback__header">Обратная связь</h3>
+        <form autocomplete="off" class="feedback__form">
+            <label for="name">Ваше имя*</label>
+            <input type="text" name="name" id="name" required>
+            <label for="phone">Телефон*</label>
+            <input type="text" name="phone" id="phone" required>
+            <label for="email">Email*</label>
+            <input type="text" name="email" id="email" required>
+            <label for="message">Сообщение</label>
+            <textarea type="text" name="message" id="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<main>
+    <nav class="site-nav">
+        <div class="container site-nav__container">
+            <ul class="site-nav__navigation">
+                <li class="site-nav__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#">Прайс-лист</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="slider">
+        <div class="slider__container">
+            <div class="slider__gallery">
+                <div class="slider__slide">
+                    <img src="img/slides/slide-1.png" alt="banner-1" width="1920" height="400"/>
+                </div>
+                <div class="slider__slide">
+                    <img src="img/slides/slide-2.png" alt="banner-2" width="1920" height="400"/>
+                </div>
+            </div>
+            <div class="slider__arrows"></div>
+        </div>
+    </section>
+    <section class="page-content">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__breadcrumb">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__breadcrumb">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__breadcrumb">
+                        <a href="#">Бытовая техника</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="container catalog__container">
+                <div class="catalog__wrapper">
+                        <div class="catalog__side-block">
+                            <ul class="catalog__categories">
+                                <li class="catalog__category">
+                                    <a href="#">Автомобили</a>
+                                </li>
+                                <li class="catalog__category">
+                                    <a class="active" href="#">Бытовая техника</a>
+                                    <ul class="catalog__subcategory">
+                                        <li class="catalog__subcategory-item">
+                                            <a  class="active" href="#">Микроволновки</a>
+                                        </li>
+                                        <li class="catalog__subcategory-item">
+                                            <a href="#">Холодильники</a>
+                                        </li>
+                                        <li class="catalog__subcategory-item">
+                                            <a href="#">Посудомоечные машины</a>
+                                        </li>
+                                        <li class="catalog__subcategory-item">
+                                            <a href="#">Чайники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="catalog__category">
+                                    <a href="#">Мобильная техника</a>
+                                </li>
+                                <li class="catalog__category">
+                                    <a href="#">Компьютеры</a>
+                                </li>
+                                <li class="catalog__category">
+                                    <a href="#">Одежда</a>
+                                </li>
+                                <li class="catalog__category">
+                                    <a href="#">Недвижимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog__products">
+                            <a href="#">
+                                <div class="catalog__product-card product-card">
+                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
+                                    <div class="product-card__bottom">
+                                        <span class="product-card__price">1 900 р.</span>
+                                        <button type=button class="product-card__add-to-basket add-to-basket"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="catalog__product-card product-card">
+                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
+                                    <div class="product-card__bottom">
+                                        <span class="product-card__price">1 900 р.</span>
+                                        <button type=button class="product-card__add-to-basket add-to-basket"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="catalog__product-card product-card">
+                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
+                                    <div class="product-card__bottom">
+                                        <span class="product-card__price">1 900 р.</span>
+                                        <button type=button class="product-card__add-to-basket add-to-basket"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="catalog__product-card product-card">
+                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
+                                    <div class="product-card__bottom">
+                                        <span class="product-card__price">1 900 р.</span>
+                                        <button type=button class="product-card__add-to-basket add-to-basket"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="catalog__product-card product-card">
+                                    <img src="img/nophoto.png" alt="product name" width="210" height="209" />
+                                    <span class="product-card__description">Самый клевый чайник, который надо купить!</span>
+                                    <div class="product-card__bottom">
+                                        <span class="product-card__price">1 900 р.</span>
+                                        <button type=button class="product-card__add-to-basket add-to-basket"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="catalog__pages-block">
+                                <ul class="catalog__pages">
+                                    <li class="catalog__page">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#" class="active">3</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#">6</a>
+                                    </li>
+                                    <li class="catalog__page">
+                                        <a href="#">7</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="catalog__seo-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus gravida, fringilla lorem ac, aliquet felis. Aliquam auctor, arcu id consequat accumsan, eros ipsum eleifend orci, nec ultrices nulla dui a lectus. Sed vitae metus in lorem sollicitudin lacinia. Praesent iaculis laoreet turpis, eget pulvinar leo consectetur eget. Morbi blandit tempor tellus ut aliquet. Aliquam pretium ex vel risus aliquet, id mollis velit dignissim. Proin ornare lacus ac ligula sodales dictum nec ac enim. Mauris nisi tellus, finibus id diam nec, feugiat maximus orci. Sed at varius felis. t</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus gravida, fringilla lorem ac, aliquet felis. Aliquam auctor, arcu id consequat accumsan, eros ipsum eleifend orci, nec ultrices nulla dui a lectus. Sed vitae metus in lorem sollicitudin lacinia. Praesent iaculis laoreet turpis, eget pulvinar leo consectetur eget. Morbi blandit tempor tellus ut aliquet. Aliquam pretium ex vel risus aliquet, id mollis velit dignissim. Proin ornare lacus ac ligula sodales dictum nec ac enim. Mauris nisi tellus, finibus id diam nec, feugiat maximus orci. Sed at varius felis. t</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="site-footer__clear-fix"></div>
+    <div class="site-footer__content">
+        <div class="container site-footer__container">
+            <div class="site-footer__info">
+                <span>© 2012–2013 ЗАО «Компания»</span>
+                <span>info@name.ru</span>
+            </div>
+            <div class="site-footer__nav">
+                <ul class="site-footer__navigation">
+                    <li class="site-footer__navigation-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-footer__navigation-item">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="site-footer__navigation-item">
+                        <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="site-footer__navigation-item">
+                        <a href="#">Прайс-лист</a>
+                    </li>
+                    <li class="site-footer__navigation-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer__website-dev">
+                <div class="developers-logo">
+                    <img src="img/glos-logo.png" alt="Website developers logo" width="36" height="38" />
+                </div>
+                <span><a>Разработка сайта</a> — компания «ГЛОС»</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
