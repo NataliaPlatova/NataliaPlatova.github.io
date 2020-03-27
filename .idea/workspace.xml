@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,7 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Glos__test/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,7 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,10 +66,16 @@
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Glos__test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -77,10 +86,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io\Glos__test" />
       <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io\Glos__test" />
       <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io" />
     </key>
   </component>
@@ -129,14 +140,16 @@
       <workItem from="1580789361945" duration="489000" />
       <workItem from="1582612023875" duration="733000" />
       <workItem from="1582709885567" duration="460000" />
+      <workItem from="1585292734274" duration="804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24440000" />
+    <option name="totallyTimeSpent" value="25244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -237,6 +250,9 @@
           <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Glos__test/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
