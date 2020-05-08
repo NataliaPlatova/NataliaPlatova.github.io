@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="" />
+    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/buttons/addtobasket_mini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/buttons/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/buttons/burger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/buttons/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/buttons/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/glos-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/logo-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/mobile-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/nophoto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/slides/slide-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/img/slides/slide-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/.sass-cache/04599e8a37ea87d0338948fe2e8850622a5524b1/fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/.sass-cache/04599e8a37ea87d0338948fe2e8850622a5524b1/ie.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/.sass-cache/04599e8a37ea87d0338948fe2e8850622a5524b1/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/.sass-cache/decbe6a13cdd0070c345bdef48c86dcb8b6df36f/fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/.sass-cache/decbe6a13cdd0070c345bdef48c86dcb8b6df36f/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glos__test/style/scss/style.scss" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,10 +69,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="406" />
-    <option name="y" value="15" />
-    <option name="width" value="1364" />
-    <option name="height" value="587" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -54,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -61,16 +88,10 @@
               <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NataliaPlatova.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NataliaPlatova.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="Glos__test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -86,8 +107,8 @@
       <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io\Glos__test" />
       <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io" />
+      <recent name="C:\Users\nplat_000\Documents\projects\github\NataliaPlatova.github.io\Glos__test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -135,18 +156,20 @@
       <workItem from="1580789361945" duration="489000" />
       <workItem from="1582612023875" duration="733000" />
       <workItem from="1582709885567" duration="460000" />
-      <workItem from="1585292734274" duration="1874000" />
+      <workItem from="1585292734274" duration="2426000" />
+      <workItem from="1585466506456" duration="20000" />
+      <workItem from="1588935406415" duration="177000" />
+      <workItem from="1588935596475" duration="114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26314000" />
+    <option name="totallyTimeSpent" value="27177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -158,7 +181,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26841244" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26841244" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -246,15 +269,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Glos__test/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Glos__test/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Glos__test/index.html" />
+    <entry file="file://$PROJECT_DIR$/Glos__test/js/main.js" />
   </component>
 </project>

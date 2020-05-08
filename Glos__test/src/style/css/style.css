@@ -14,6 +14,8 @@ p {
 
 html {
   height: 100%;
+  width: 100vw;
+  -ms-overflow-x: hidden;
 }
 
 body {
@@ -23,6 +25,12 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #767676;
+  width: 100%;
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
 }
 
 button {
@@ -280,8 +288,6 @@ a {
 .slider__slide {
   width: 100%;
   min-height: 400px;
-  background-size: cover;
-  background-position: top 0 left 50%;
 }
 
 @media screen and (max-width: 767px) {
