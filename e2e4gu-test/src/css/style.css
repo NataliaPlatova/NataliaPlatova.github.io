@@ -76,6 +76,26 @@ input {
     width: 100%;
 }
 
+.form__popup-warning {
+    box-shadow: 0 0 5px #9A9A98;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    display: none;
+}
+
+.form__popup-warning>span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #496dac;
+}
+
 .form__submit {
     background-color: #496dac;
     border-radius: 2px;
@@ -93,6 +113,9 @@ input {
 
 .form__submit_disabled {
     background-color: #dbdbdb;
-    cursor: unset;
+}
+
+.form__submit_disabled:hover + .form__popup-warning {
+    display: block;
 }
 
