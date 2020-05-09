@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e2e4gu-test</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+<div class="form">
+    <form autocomplete="off">
+        <div class="form__user-name">
+            <label>
+                <span class="form__label">Ваше имя</span>
+                <!--По учётным записям, самое длинное мужское имя в России — Абдурахмангаджи(15 букв)-->
+                <input type="text" id="users-name" name="users-name" class="form__name-input" maxlength="15" required>
+                <span class="form__error-text name-error-text">Пожалуйста, проверьте введенное имя.</span>
+            </label>
+            <label>
+                <span class="form__label">Ваша фамилия</span>
+                <!--Cамая длинная фамилия в России — Христорождественский(20 букв). Учитываем, что фамилия может быть двойной.-->
+                <input type="text" id="users-surname" name="users-surname" class="form__surname-input" maxlength="40" required>
+                <span class="form__error-text surname-error-text">Пожалуйста, проверьте введенную фамилию.</span>
+            </label>
+        </div>
+        <div class="form__user-name">
+            <label>
+                <span class="form__label">Дата рождения</span>
+                <input type="date" id="users-birthday" name="users-birthday" class="form__birthday-input" required>
+                <span class="form__error-text birthday-error">Регистрироваться на сайте можно с 18 лет.</span>
+            </label>
+            <label>
+                <span class="form__label">Email</span>
+                <input type="email" id="email" class="form__email-input" name="email" required>
+                <span class="form__error-text email-error-text">Пожалуйста, проверьте введенный email.</span>
+            </label>
+        </div>
+        <label>
+            <span class="form__label">Пароль</span>
+            <input type="password" id="password" name="password" class="form__password-input" required>
+            <span class="form__error-text password-error password-error__length">Минимальная длина пароля - 8 символов.</span>
+            <span class="form__error-text password-error password-error__text">Пароль должен содержать минимум одну цифру, заглавную и строчную буквы и один символ.</span>
+        </label>
+        <label>
+            <span class="form__label">Подтверждение пароля</span>
+            <input type="password" id="password-repeat" name="password-repeat" class="form__password-repeat" required>
+            <span class="form__error-text password-repeat-error">Пароли не совпадают.</span>
+        </label>
+        <button type="submit" class="form__submit form__submit_disabled" disabled="true">Отправить</button>
+    </form>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
