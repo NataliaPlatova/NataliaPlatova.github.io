@@ -124,63 +124,65 @@ passwordInput.addEventListener('change', function (e) {
 
 /*Проверка совпадения паролей*/
 passwordRepeatInput.addEventListener('change', function (e) {
-   let password = passwordInput.value;
-   let passwordRepeat = e.target.value;
-   if(password!==passwordRepeat){
-       passwordRepeatError.style.display='block';
-       passwordRepeatInput.classList.add('input_invalid');
-       validFields.passwordRepeat = false;
-   }else{
-       passwordRepeatError.style.display='none';
-       passwordRepeatInput.classList.remove('input_invalid');
-       validFields.passwordRepeat = true;
-   }
-   checkFormValidation();
+    let password = passwordInput.value;
+    let passwordRepeat = e.target.value;
+    if(password!==passwordRepeat){
+        passwordRepeatError.style.display='block';
+        passwordRepeatInput.classList.add('input_invalid');
+        validFields.passwordRepeat = false;
+    }else{
+        passwordRepeatError.style.display='none';
+        passwordRepeatInput.classList.remove('input_invalid');
+        validFields.passwordRepeat = true;
+    }
+    checkFormValidation();
 });
 
 /*Проверка возраста*/
 birthdayInput.addEventListener('change', function (e) {
-   /*Дата рождения*/
-   let birthday = e.target.value.toString();
-   let birthYear = birthday.slice(0,4);
-   let birthMonth = birthday.slice(6,7);
-   let birthDay = birthday.slice(9,10);
+    /*Дата рождения*/
+    let birthday = e.target.value.toString();
+    let birthYear = birthday.slice(0,4);
+    let birthMonth = birthday.slice(6,7);
+    let birthDay = birthday.slice(8,10);
 
     /*Сегодняшняя дата*/
-   let localDate = new Date().toLocaleDateString('ru-RU');
-   let localYear = localDate.slice(6,10);
-   let localMonth = localDate.slice(3,5);
-   let localDay = localDate.slice(0,2);
+    let localDate = new Date().toLocaleDateString('ru-RU');
+    let localYear = localDate.slice(6,10);
+    let localMonth = localDate.slice(3,5);
+    let localDay = localDate.slice(0,2);
 
-   if(localYear-birthYear<18) {
-       birthdayError.style.display = 'block';
-       birthdayInput.classList.add('input_invalid');
-       validFields.birthday = false;
-   }else if(localYear-birthYear===18){
-       if(localMonth-birthMonth<0){
-           birthdayError.style.display = 'block';
-           birthdayInput.classList.add('input_invalid');
-           validFields.birthday = false;
-       }else if(localMonth-birthMonth===0){
-           if(localDay-birthDay<0){
-               birthdayError.style.display = 'block';
-               birthdayInput.classList.add('input_invalid');
-               validFields.birthday = false;
-           }else{
-               birthdayError.style.display = 'none';
-               birthdayInput.classList.remove('input_invalid');
-               validFields.birthday = true;
-           }
-       }else{
-           birthdayError.style.display = 'none';
-           birthdayInput.classList.remove('input_invalid');
-           validFields.birthday = true;
-       }
-   }else{
-       birthdayError.style.display = 'none';
-       birthdayInput.classList.remove('input_invalid');
-       validFields.birthday = true;
-   }
-   checkFormValidation();
+    if(localYear-birthYear<18) {
+        birthdayError.style.display = 'block';
+        birthdayInput.classList.add('input_invalid');
+        validFields.birthday = false;
+    }else if(localYear-birthYear===18){
+        if(localMonth-birthMonth<0){
+            birthdayError.style.display = 'block';
+            birthdayInput.classList.add('input_invalid');
+            validFields.birthday = false;
+        }else if(localMonth-birthMonth===0){
+            console.log(localDay);
+            console.log(birthDay);
+            if(localDay-birthDay<0){
+                birthdayError.style.display = 'block';
+                birthdayInput.classList.add('input_invalid');
+                validFields.birthday = false;
+            }else{
+                birthdayError.style.display = 'none';
+                birthdayInput.classList.remove('input_invalid');
+                validFields.birthday = true;
+            }
+        }else{
+            birthdayError.style.display = 'none';
+            birthdayInput.classList.remove('input_invalid');
+            validFields.birthday = true;
+        }
+    }else{
+        birthdayError.style.display = 'none';
+        birthdayInput.classList.remove('input_invalid');
+        validFields.birthday = true;
+    }
+    checkFormValidation();
 });
 

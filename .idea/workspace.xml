@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e4gu-test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e4gu-test/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c692926d-506e-4909-8174-125531773c85" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,7 +37,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/e2e4gu-test/src/css/style.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -72,10 +73,12 @@
         <option value="$PROJECT_DIR$/Glos__test/js/main.js" />
         <option value="$PROJECT_DIR$/Glos__test/index.html" />
         <option value="$PROJECT_DIR$/e2e4gu-test/index.html" />
+        <option value="$PROJECT_DIR$/e2e4gu-test/src/css/style.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-6" />
     <option name="width" value="1364" />
     <option name="height" value="726" />
   </component>
@@ -186,18 +189,18 @@
       <workItem from="1588935406415" duration="177000" />
       <workItem from="1588935596475" duration="114000" />
       <workItem from="1588935779301" duration="966000" />
-      <workItem from="1589011772878" duration="4380000" />
+      <workItem from="1589011772878" duration="5048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32523000" />
+    <option name="totallyTimeSpent" value="33191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,7 +212,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26841244" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26841244" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -318,7 +321,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e2e4gu-test/src/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
